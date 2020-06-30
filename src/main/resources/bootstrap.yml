@@ -1,0 +1,8 @@
+#使用配置中心，config管理配置文件
+spring:
+  cloud:
+    config:
+      name: springcloud-config-eureka       #对应的config上的文件名称
+      profile: dev
+      label: master                         #默认主支
+      uri: http://localhost:9003            #config地址
